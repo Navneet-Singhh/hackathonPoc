@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #81003a8a 0%, rgb(29, 8, 53, 0.7) 70%);
+    padding: 15px 5%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: white;
+  }
+  
+  .logo i {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 80px 0;
+    transition: transform 0.5s ease;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .hero button {
+    background-color: white;
+    color: #ff69b4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: #ffc0cb;
+  }
+  
+  .video-section {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .video-section video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border: none;
+  }
+  
+  .game-cards {
+    display: none;
+    padding: 10px;
+    background-color: #1c1c1c;
+    text-align: center;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .game-cards.active {
+    display: flex;
+  }
+  
+  .card {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #81003a8a 0%, rgb(29, 8, 53, 0.7) 70%);
+    color: white;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 100;
+  }
+  
+  .footer.active {
+    transform: translateY(0);
+  }
+  .game-container {
+    text-align: center;
+    padding: 20px;
+}
+.card a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the text color from the parent */
+    display: block; /* Ensures the entire area is clickable */
+}
+
+.card a:hover {
+    opacity: 0.8; /* Optional: Adds a slight hover effect */
+}
+a[href*="jade-ellis"] {
+    display: none !important;
+  }
+
+  .footer {
+    display: none;
+  }

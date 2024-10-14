@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Gaming Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <i class="fas fa-gamepad"></i> <!-- Gaming controller icon -->
+      <h1>CloudPlay</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#video-section" id="explore-button">Explore</a></li>
+        <li><a href="#game-cards" id="games-link">Games</a></li>
+        <li><a href="#solution-button" id="solution-button">Solution</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="video-section" id="video-section">
+    <video width="100%" height="100vh" controls autoplay muted loop>
+      <source src="video/videoplayback copy.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+
+  <section class="game-cards" id="game-cards">
+    <div class="card" onclick="showUnavailableMessage()">
+      <img src="gamePhotos/Grand_Theft_Auto_logo_series.svg.png" alt="Game 1">
+      <h3>Grand theft auto</h3>
+      <p>Available on rent.</p>
+    </div>
+    <div class="card" onclick="showUnavailableMessage()">
+      <img src="gamePhotos/GTA.webp" alt="Game 2">
+      <h3>Grand theft auto viceCity</h3>
+      <p>Available on rent.</p>
+    </div>
+    <div class="card" >
+        <a href="dinoGame.html"> <!-- Link to the new page -->
+            <img src="gamePhotos/dinoGame.jpeg" alt="Game 3">
+            <h3>Dino Game</h3>
+            <p>Try it for FREE</p>
+          </a>
+    </div>
+    <div class="card" onclick="showUnavailableMessage()" >
+      <img src="gamePhotos/marvel-s-spider-man-the-art-of-the-game-original-imagguhtrqcwcqvb.webp" alt="Game 4">
+      <h3>Spider Man</h3>
+      <p>Available on rent.</p>
+    </div>
+  </section>
+
+  <section class="hero" id="hero">
+    <h1>Play Anywhere, Anytime</h1>
+    <h1>Access hundreds of games instantly without downloads.</h1>
+  </section>
+
+  <footer class="footer" id="footer">
+    <p>© 2024 CloudPlay Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
